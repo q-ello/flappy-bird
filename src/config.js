@@ -179,7 +179,7 @@ class Config{
             fontSize: 10
         },
         currSmall: 350,
-        bestSmall: 390,
+        bestSmall: 393,
 
         right: 158,
         fontSize: 15
