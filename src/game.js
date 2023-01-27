@@ -99,6 +99,8 @@ class Game {
 
         this.pipes = {pipes: [], count: 0};
         this._speed = this._config.speed;
+        this.background.moving1.speed = this._speed;
+        this.background.moving2.speed = this._speed;
     }
 
     update(delta){
