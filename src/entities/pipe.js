@@ -14,10 +14,10 @@ class Pipe {
 
     update(){
         if (this.leftBorder <= this.bird.x + this.bird.width && this.rightBorder >= this.bird.x){
-            if (this.upBorder >= this.bird.y || this.bottomBorder <= this.bird.y + SIZE_OF_BIRD[1]) {
+            if (this.upBorder >= this.bird.y || this.bottomBorder <= this.bird.y + this.bird.height) {
                 this._game.gameOver();
             }
-            if (this.leftBorder - this.bird.x <= this.speed && this.leftBorder - this.bird.x >= 0) {
+            if (this.leftBorder - this.bird.x < this.speed && this.leftBorder - this.bird.x >= 0) {
                 this._game._score++;
                 if (this._game._score % 10 === 0) {
                     this._game._speed += 0.5;
